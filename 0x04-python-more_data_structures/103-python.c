@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@emmanueldavids 
+addardey
+/
+alx-higher_level_programming
+Public
+Fork your own copy of addardey/alx-higher_level_programming
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+alx-higher_level_programming/0x04-python-more_data_structures/103-python.c
+@addardey
+addardey PyBytesObject
+Latest commit cb8022a 20 hours ago
+ History
+ 1 contributor
+70 lines (58 sloc)  1.31 KB
+
 #include <stdio.h>
 #include <Python.h>
 
@@ -67,3 +96,19 @@ void print_python_list(PyObject *p)
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
 	}
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+alx-higher_level_programming/103-python.c at master · addardey/alx-higher_level_programming
