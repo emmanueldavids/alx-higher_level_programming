@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-A simple rectangle
-"""
+# 0-rectangle.py
+"""Defines a Rectangle
+class."""
 
 class Rectangle:
-    """
-    Rectangle fields and methods
-    """
+    """Represent a
+    rectangle."""
     pass
-
