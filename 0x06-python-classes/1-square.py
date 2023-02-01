@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-"""Square generation module for Python project 0x06
+"""
+No module imported
 """
 
 
 class Square:
-    """class defined for square generation
+    """
+    Defines a square by private instance size,
+    instantiation with size.
     """
     def __init__(self, size):
-        self.__size = size
+        """
+        size : no type/value verification
+        ----------------------------
+        Private instance attribute size
+        """
+        self.__size =
