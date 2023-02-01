@@ -1,35 +1,29 @@
 #!/usr/bin/python3
-""" text_indentation returns "text" in the specified format:
-2 newlines after each ['.', '?', ':']
-"""
+# 5-text_indentation.py
+"""Defines a text-indentation function."""
 
 
 def text_indentation(text):
-    """ prints "text" with 2 newlines after each of these char: ['.', '?', ':']
-    checks if "text" is a str
-    first loop removes spaces after each required chars
-    second loop adds 2 newlines after each required chars
+    """Print text with two new lines after each '.', '?', and ':'.
+    Args:
+        text (string): The text to print.
+    Raises:
+        TypeError: If text is not a string.
     """
-    if type(text) != str:
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
-    toCatAfter = ['.', '?', ':']
 
-    # Removes the space after special chars
-    idx = 0
-    for items in text:
-        if items in toCatAfter:
-            if text[idx + 1] == " ":
-                text = text[:idx + 1] + text[idx + 2:]
-        else:
-            idx += 1
+    c = 0
+    while c < len(text) and text[c] == ' ':
+        c += 1
 
-    # Cats '\n\n' after the special char with removed space
-    idx = 0
-    for items in text:
-        if items in toCatAfter:
-            text = text[:idx + 1] + '\n\n' + text[idx + 1:]
-            idx += 3
-        else:
-            idx += 1
-
-    print(text, end='')
+    while c < len(text):
+        print(text[c], end="")
+        if text[c] == "\n" or text[c] in ".?:":
+            if text[c] in ".?:":
+                print("\n")
+            c += 1
+            while c < len(text) and text[c] == ' ':
+                c += 1
+            continue
+        c += 1
