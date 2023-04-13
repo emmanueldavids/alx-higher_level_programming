@@ -8,18 +8,15 @@ class Rectangle {
         }
     }
 
-    /*
-    * create an instace methos called print()
-    */
    print () {
     for (let i = 0; i < this.height; i++) {
         let myVar = '';
-        let y = 0;
-    
+        let y = 0;  
         while (y < this.height) {
           myVar += 'X';
           y++;
         }
+
         console.log(myVar);
       }
    }
