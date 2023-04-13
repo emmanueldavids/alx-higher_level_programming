@@ -1,0 +1,27 @@
+#!/usr/bin/node
+
+class Rectangle {
+    constructor (w, h) {
+        if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0){
+            this.width = w;
+            this.height = h;
+        }
+    }
+
+    /*
+    * create an instace methos called print()
+    */
+   print () {
+    for (let i = 0; i < this.height; i++) {
+        let myVar = '';
+        let y = 0;
+    
+        while (y < this.height) {
+          myVar += 'X';
+          y++;
+        }
+        console.log(myVar);
+      }
+   }
+}
+module.exports = Rectangle;
